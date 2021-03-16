@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat";
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+a{
+    color: #000;
 }
 
 :root{
@@ -17,6 +24,8 @@
     --alertgreen: #38A169;
     --alertyellow: #DD6B20;
     --alertblue: #3182CE;
+    --box-shadow-down: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    --box-shadow-right: 1px 0 0px 0 rgba(0, 0, 0, 0.1);
 }
 
 body, html{
@@ -24,6 +33,7 @@ body, html{
     height: 100vh;
 }
 
+/* components */
 .grid-container{
     display: grid;
     min-height: 100px;
@@ -77,6 +87,11 @@ body, html{
 .p1{
     padding: 1rem;
 }
+
+.p12{
+    padding: 1rem 2rem;
+}
+
 
 .mt1{
     margin-top: 1rem;
