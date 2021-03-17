@@ -1,5 +1,5 @@
-:root{
-    --c : #fff;
+:root {
+  --c: #fff;
 }
 
 /* page layout */
@@ -64,19 +64,55 @@ nav {
   height: 100vh;
   text-align: center;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-  background-color: var(--c);
+  background-color: #fff;
 }
 
-#menu:target{
-    right: 0;
+#menu:target {
+  right: 0;
 }
 
-.logo:hover {
-    --c: aqua !important;
+/* .code {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+  transform: scale(1) !important;
+  overflow: hidden !important;
+} */
+
+.code {
+  width: 100%;
+  /* padding: 0 1rem; */
+}
+
+iframe {
+  width: 100%;
+  min-height: 40vh !important;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+  display: block !important;
+  /* background-color: khaki; */
+}
+
+.code > iframe body::-webkit-scrollbar{
+  background-color: aqua !important;
 }
 
 .right-displaysection {
   width: 100%;
+  padding-top: 90px;
 }
 
 @media screen and (min-width: 768px) {
@@ -105,5 +141,9 @@ nav {
 
   .right-displaysection {
     width: 75%;
+  }
+
+  iframe{
+    min-height: 30vh !important;
   }
 }

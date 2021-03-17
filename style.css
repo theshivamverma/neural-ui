@@ -129,10 +129,18 @@ body, html{
     align-items: center;
 }
 
+.jsb{
+    justify-content: space-between;
+}
+
 /* Width */
 
-.half{
+.width-50{
     width: 50%;
+}
+
+.width-75{
+    width: 75%;
 }
 
 /* Borders */
@@ -149,6 +157,18 @@ body, html{
 
 /* alerts */
 
+.alert{
+    display: flex;
+}
+
+.alert-content{
+    width: 90%;
+}
+
+.alert.active{
+    display: none;
+}
+
 .alertred{
     color: var(--alertred);
 }
@@ -164,3 +184,4 @@ body, html{
 .alertblue{
     color: var(--alertblue)
 }
+
