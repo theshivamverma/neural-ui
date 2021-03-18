@@ -146,4 +146,12 @@ iframe {
   iframe{
     min-height: 30vh !important;
   }
+
+  .code-alert > iframe{
+    height: 90vh;
+  }
+
+  .avatars{
+    padding: 1rem 5rem !important;
+  }
 }
