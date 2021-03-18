@@ -16,6 +16,10 @@ a{
     --primary-color: #fff;
     --secondary-color: #000;
     --gray:#ebebeb;
+    --darkgray:#9CA3AF;
+    --flatgreen: #34D399;
+    --flatblue: #60A5FA;
+    --flatpurple: #A78BFA;
     --fadedred: #FED7D7;
     --fadedgreen: #C6F6D5;
     --fadedyellow: #FEEBC8;
@@ -97,7 +101,6 @@ body, html{
     padding: 1rem 3rem;
 }
 
-
 .mt1{
     margin-top: 1rem;
 }
@@ -178,26 +181,38 @@ body, html{
     border-color: var(--lightgray);
 }
 
-.bdRed{
-    border-color: var(--alert);
+.bdBlue{
+    border-color: var(--flatblue);
 }
 
 .bdGreen{
-    border-color: var(--alertgreen);
+    border-color: var(--flatgreen);
 }
 
-.bdLightBlue{
-    border-color: var(--fadedblue);
+.bdPurple{
+    border-color: var(--flatpurple);
 }
 
 .bdYellow{
     border-color: var(--alertyellow);
 }
 
+.bdWhite{
+    border-color: #fff;
+}
+
 /* Icons */
 
 .icon-med{
     font-size: 1.3rem;
+}
+
+.icon-lg{
+    font-size: 1.6rem;
+}
+
+.icon-badge{
+    position: relative;
 }
 
 /* alerts */
@@ -237,8 +252,7 @@ body, html{
 }
 
 .avatar-wrapper{
-   overflow:hidden;
-   position: relative;
+   position: relative !important;
 }
 
 .av-vvsm{
@@ -272,3 +286,51 @@ body, html{
     object-fit: cover;
 }
 
+/* badges */
+
+.badge{
+    position: absolute;
+    z-index: 99;
+}
+
+.bdg-tr{
+    top: -6px;
+    right: -6px;
+}
+
+.badge-avtr{
+    bottom: -2px;
+    right: 0px;
+}
+
+.bdg-num{
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bdg-dot{
+    width: 20px;
+    height: 20px;
+}
+
+.bdg-blue{
+    background-color: var(--flatblue);
+}
+
+.bdg-red{
+    background-color: var(--alertred);
+}
+
+.bdg-green{
+    background-color: var(--alertgreen);
+}
+
+.bdg-gray{
+    background-color: var(--darkgray);
+}
