@@ -158,23 +158,23 @@ body, html{
 /* Borders */
 
 .border-round{
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .bd1{
-    border: 1px solid #000;
+    border: 1px solid #000 !important;
 }
 
 .bd2{
-    border: 2px solid #000;
+    border: 2px solid #000 !important;
 }
 
 .bd3{
-    border: 3px solid #000;
+    border: 3px solid #000 !important;
 }
 
 .bd4{
-    border: 4px solid #000;
+    border: 4px solid #000 !important;
 }
 
 .bdGray{
@@ -209,6 +209,10 @@ body, html{
 
 .icon-lg{
     font-size: 1.6rem;
+}
+
+.icon-xlg{
+    font-size: 2rem;
 }
 
 .icon-badge{
@@ -333,4 +337,84 @@ body, html{
 
 .bdg-gray{
     background-color: var(--darkgray);
+}
+
+/* buttons */
+
+.buttons{
+    flex-direction: column;
+    height: 70vh;
+    position: relative;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--flatblue);
+}
+
+.btn-col{
+    color: #fff;
+}
+
+.btn-lg{
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+}
+
+.btn-link:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-icon{
+    padding: 0 !important;
+}
+
+.btn-danger{
+    background-color: var(--alertred);
+}
+
+.btn-success{
+    background-color: var(--alertgreen);
+}
+
+.btn-warning{
+    background-color: var(--alertyellow);
+}
+
+.btn-block{
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+}
+
+.btn-float{
+    position: absolute;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.top-right5{
+    top: 5%;
+    right: 5%;
+}
+
+.bottom-right5{
+    bottom: 5%;
+    right: 5%;
 }
