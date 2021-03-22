@@ -141,6 +141,8 @@ iframe {
 
   .right-displaysection {
     width: 75%;
+    padding: 0 5rem;
+    padding-top: 90px;
   }
 
   iframe{
@@ -155,3 +157,4 @@ iframe {
     padding: 1rem 5rem !important;
   }
 }
+
