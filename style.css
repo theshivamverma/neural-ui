@@ -470,6 +470,7 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 10vh;
+  position: relative;
 }
 
 .card-badge {
@@ -526,8 +527,6 @@ html {
 .product-heading {
   font-size: 0.9rem;
   font-weight: 600;
-  display: flex;
-  justify-content: space-between;
 }
 
 .product-desc {
@@ -552,13 +551,27 @@ html {
   color: var(--alertred);
 }
 
+.wishlist{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  background-color: var(--fadedred);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
 .wishlist,
 .like {
-  color: var(--darkgray);
+  color: var(--primary-color);
 }
 
 .like.active,
-.wishlist.active {
+.wishlist-icon.active {
   color: var(--alertred);
 }
 
