@@ -513,7 +513,7 @@ html {
 }
 
 .product-img {
-  height: 60%;
+  height: 200px;
   width: 100%;
 }
 
@@ -524,14 +524,14 @@ html {
 }
 
 .product-heading {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
 }
 
 .product-desc {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 300;
 }
 
@@ -580,10 +580,6 @@ html {
   margin-right: 1rem;
 }
 
-.product-heading{
-  font-size: 1rem;
-}
-
 .cart-product-img > img {
   width: 100%;
   height: 100%;
@@ -621,7 +617,7 @@ html {
 }
 
 .price-cut {
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 0 0;
 }
 
 .cart-product-price > .price {
@@ -738,6 +734,12 @@ html {
   }
 
   /* Cards */
+
+  .product-heading {
+    font-size: 1rem;
+  }
+
+
 
   .cart-product-price {
     width: initial !important;
