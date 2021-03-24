@@ -14,7 +14,7 @@
     ></script>
   </head>
   <body>
-    <nav>
+    <nav class="doc-nav">
       <a href="/" class="logo">
         <img src="/images/panda.png" alt="" />
         <h3>Panda UI</h3>
@@ -272,6 +272,9 @@
           <button class="btn btn-col btn-primary border-round">
             Primary Button
           </button>
+          <button class="btn btn-col btn-secondary border-round">
+            Secondary Button
+          </button>
           <button class="btn btn-col btn-danger border-round">
             Danger Button
           </button>
@@ -285,13 +288,24 @@
           <button class="btn btn-icon">
             <i class="far fa-address-card icon-xlg"></i>
           </button>
+          <button class="btn btn-icon icon-text-down">
+            <i class="far fa-address-card icon-lg"></i>
+            <p class="mt05">Profile</p>
+          </button>
+          <button class="btn btn-icon icon-text-right">
+            <i class="far fa-address-card icon-lg"></i>
+            <p>Profile</p>
+          </button>
+          <button class="btn btn-col btn-secondary border-round">
+            See float button
+          </button>
           <button class="btn btn-col btn-lg btn-primary border-round">
             Primary Button
           </button>
           <button class="btn btn-col btn-block btn-primary border-round">
             Primary Button
           </button>
-          <button class="btn btn-col btn-primary btn-float top-right5">
+          <button class="btn btn-col btn-primary btn-float bottom-right5">
             <i class="fas fa-bars menu icon-lg"></i>
           </button>
         </div>
@@ -350,9 +364,11 @@
             <p class="product-desc mt05">Men Slim Fit Casual Shirt</p>
             <h2 class="price mt05">
               Rs 999
+            </h2>
+            <div class="og-price">
               <span class="price-cut">Rs. 1999</span>
               <span class="discount">(55% Off)</span>
-            </h2>
+            </div>
             <button class="btn btn-col btn-primary mt1 border-round">
               Add to Cart
             </button>
@@ -373,9 +389,11 @@
             <p class="product-desc mt05">Men Slim Fit Casual Shirt</p>
             <h2 class="price mt05">
               Rs 999
+            </h2>
+            <div class="og-price">
               <span class="price-cut">Rs. 1999</span>
               <span class="discount">(55% Off)</span>
-            </h2>
+            </div>
             <button class="btn btn-col btn-primary mt1 border-round">
               Add to Cart
             </button>
@@ -396,9 +414,11 @@
             <p class="product-desc mt05">Men Slim Fit Casual Shirt</p>
             <h2 class="price mt05">
               Rs 999
+            </h2>
+            <div class="og-price">
               <span class="price-cut">Rs. 1999</span>
               <span class="discount">(55% Off)</span>
-            </h2>
+            </div>
             <button class="btn btn-col btn-primary mt1 border-round">
               Add to Cart
             </button>
@@ -417,7 +437,6 @@
               <div class="cart-product-desc">
                 <h1 class="product-heading">Levis</h1>
                 <p class="product-desc mt05">Men Slim Fit Casual Shirt</p>
-
                 <div class="change-quantity mt05">
                   <button class="btn btn-icon btn-cart">
                     <i class="fas fa-minus icon-xxsm"></i>
@@ -508,6 +527,24 @@
             
           </div>
         </div>
+        <h2 class="center mt2">Nav</h2>
+        <nav class="nav p1">
+          <h1>Brand Name</h1>
+          <div class="menu">
+            <button class="btn btn-icon icon-text-down">
+              <i class="fas fa-shopping-cart icon-lg icon-badge">
+                <span class="badge circle bdg-tr bdg-num bdg-blue">4</span>
+              </i>
+              <p class="mt05">Cart</p>
+            </button>
+            <button class="btn btn-icon icon-text-down mrl05">
+              <i class="fas fa-heart icon-lg icon-badge colorRed">
+                <span class="badge circle bdg-tr bdg-num bdg-blue">1</span>
+              </i>
+              <p class="mt05">Wishlist</p>
+            </button>
+          </div>
+        </nav>
         <h2 class="center mt2">Grids</h2>
         <div class="grid-container web-two mob-one p1 bgGray mt2">
           <div class="content bgWhite"></div>
