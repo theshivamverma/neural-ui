@@ -407,7 +407,7 @@ html {
   background-color: var(--flatblue);
 }
 
-.btn-secondary{
+.btn-secondary {
   background-color: var(--darkgray);
 }
 
@@ -429,29 +429,27 @@ html {
   padding: 0;
 }
 
-.icon-text-down{
+.icon-text-down {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.icon-text-right{
+.icon-text-right {
   display: flex;
   align-items: center;
 }
 
-.icon-text-down > p{
+.icon-text-down > p {
   font-size: 0.8rem;
   font-weight: 500;
 }
 
-.icon-text-right > p{
- font-size: 0.8rem;
+.icon-text-right > p {
+  font-size: 0.8rem;
   font-weight: 500;
   margin-left: 0.5rem;
 }
-
-
 
 .btn-danger {
   background-color: var(--alertred);
@@ -767,7 +765,7 @@ html {
 
 /* nav */
 
-.nav{
+.nav {
   width: 100%;
   height: 80px;
   display: flex;
@@ -777,16 +775,18 @@ html {
   background-color: var(--primary-color);
 }
 
-nav>h1{
-  font-size: 1.1rem;
+.nav > h1 {
+  font-size: 1.3rem;
 }
 
-.menu{
+.nav > .menu {
   display: flex;
   align-items: center;
+  width: 60%;
+  justify-content: space-between;
 }
 
-.top-fixed{
+.top-fixed {
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -852,5 +852,10 @@ nav>h1{
 
   .card-textonly {
     width: 100%;
+  }
+
+  /* Nav */
+  .nav > .menu {
+    width: 40%;
   }
 }
