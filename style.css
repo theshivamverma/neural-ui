@@ -774,6 +774,11 @@ html {
   align-items: center;
   justify-content: space-between;
   box-shadow: var(--box-shadow-down);
+  background-color: var(--primary-color);
+}
+
+nav>h1{
+  font-size: 1.1rem;
 }
 
 .menu{
