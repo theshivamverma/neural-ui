@@ -97,7 +97,7 @@
 }
 
 iframe {
-  width: 100%;
+  width: 100% !important;
   min-height: 40vh !important;
   border: 0;
   transform: scale(1);
@@ -106,13 +106,58 @@ iframe {
   /* background-color: khaki; */
 }
 
-.code > iframe body::-webkit-scrollbar{
+.code > iframe body::-webkit-scrollbar {
   background-color: aqua !important;
 }
 
 .right-displaysection {
   width: 100%;
+  padding: 0 1rem;
   padding-top: 90px;
+}
+
+.colors{
+  justify-content: space-between;
+}
+
+.code-cdn > iframe {
+  min-height: 20vh !important;
+}
+
+.code-padding {
+  height: 25vh;
+}
+
+.code-padding2 {
+  height: 35vh;
+}
+
+.code-text > iframe {
+  min-height: 55vh !important;
+}
+
+.code-alert > iframe {
+  min-height: 170vh !important;
+}
+
+.code-avt > iframe {
+  min-height: 28vh !important;
+}
+
+.code-avtbd > iframe {
+  min-height: 80vh !important;
+}
+
+.code-avtsz > iframe {
+  min-height: 95vh !important;
+}
+
+.code-bdg > iframe {
+  min-height: 120vh !important;
+}
+
+.code-btn > iframe {
+  min-height: 160vh !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -145,16 +190,40 @@ iframe {
     padding-top: 90px;
   }
 
-  iframe{
+  .colors{
+    justify-content: initial;
+  }
+
+  iframe {
     min-height: 30vh !important;
   }
 
-  .code-alert > iframe{
+  .code-alert > iframe {
     height: 90vh;
   }
 
-  .avatars{
-    padding: 1rem 5rem !important;
+  .code {
+    width: 60%;
+    /* padding: 0 1rem; */
+  }
+
+  .code-padding{
+    width: 29% !important;
+  }
+
+  .code-padding2{
+    width: 34% !important;
+  }
+
+  .code-text > iframe{
+    min-height: 40vh !important;
+  }
+
+  .code-alert{
+    width: 67% !important;
+  }
+
+  .code-alert > iframe{
+    min-height: 90vh !important;
   }
 }
-

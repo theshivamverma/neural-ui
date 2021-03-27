@@ -148,6 +148,30 @@ html {
   background-color: var(--alertblue);
 }
 
+.colorWhite{
+  color: var(--primary-color);
+}
+
+.colorGray{
+  color: var(--gray);
+}
+
+.colorLightRed{
+  color: var(--fadedred);
+}
+
+.colorLightGreen{
+  color: var(--fadedgreen);
+}
+
+.colorLightYellow{
+  color: var(--fadedyellow);
+}
+
+.colorLightBlue{
+  color: var(--fadedblue);
+}
+
 .colorRed {
   color: var(--flatred);
 }
@@ -174,6 +198,10 @@ html {
 
 .colorAlertGreen{
   color: var(--alertgreen);
+}
+
+.colorAlertYellow{
+  color: var(--alertyellow);
 }
 
 .colorAlertBlue{
@@ -527,6 +555,10 @@ html {
   margin: var(--v4) var(--v3);
 }
 
+.mt-02{
+  margin-top: 0.2rem;
+}
+
 .mt-05 {
   margin-top: var(--v05);
 }
@@ -631,8 +663,16 @@ html {
   justify-content: space-between;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-column{
+  flex-direction: column;
 }
 
 /* Text */
@@ -682,6 +722,9 @@ html {
 }
 
 /* Width */
+.width-100px{
+  width: 100px;
+}
 
 .width-50 {
   width: 50%;
@@ -689,6 +732,12 @@ html {
 
 .width-75 {
   width: 75%;
+}
+
+/* Height */
+
+.min-height60px{
+  min-height: 60px;
 }
 
 /* Borders */
