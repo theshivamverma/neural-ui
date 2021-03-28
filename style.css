@@ -898,6 +898,11 @@ html {
   z-index: 99;
 }
 
+.icon-med > .bdg-tr{
+  top: -12px;
+  right: -10px;
+}
+
 .bdg-tr {
   top: -10px;
   right: -8px;
@@ -958,6 +963,10 @@ html {
   font-weight: 500;
 }
 
+.btn:focus{
+  border: 2px solid var(--darkgray);
+}
+
 .btn:hover {
   cursor: pointer;
 }
@@ -968,6 +977,10 @@ html {
 
 .btn-secondary {
   background-color: var(--darkgray);
+}
+
+.btn-outline{
+  border: 2px solid black;
 }
 
 .btn-col {
@@ -1030,7 +1043,7 @@ html {
 
 .btn-float {
   position: fixed;
-  z-index: 999;
+  z-index: var(--z-index9);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1054,6 +1067,7 @@ html {
 .card-product {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 10vh;
   position: relative;
 }
@@ -1140,7 +1154,7 @@ html {
 .wishlist {
   position: absolute;
   top: 50%;
-  right: 2%;
+  right: 1%;
   background-color: var(--fadedred);
   width: 30px;
   height: 30px;
@@ -1148,7 +1162,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99;
+  z-index: var(--z-index9);
 }
 
 .wishlist {
@@ -1304,7 +1318,7 @@ html {
   top: 5px;
   right: 10px;
   color: var(--primary-color);
-  z-index: 99;
+  z-index: var(--z-index8);
 }
 
 .card-textonly {
@@ -1330,12 +1344,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: var(--box-shadow-down);
   background-color: var(--primary-color);
 }
 
-.nav > h1 {
-  font-size: 1.3rem;
+.box-shadow-down{
+  box-shadow: var(--box-shadow-down);
 }
 
 .nav > .menu {
@@ -1348,7 +1361,7 @@ html {
 .top-fixed {
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: var(--z-index10);
 }
 
 @media screen and (min-width: 768px) {

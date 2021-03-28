@@ -112,11 +112,11 @@ iframe {
 
 .right-displaysection {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   padding-top: 90px;
 }
 
-.colors{
+.colors {
   justify-content: space-between;
 }
 
@@ -137,7 +137,7 @@ iframe {
 }
 
 .code-alert > iframe {
-  min-height: 170vh !important;
+  min-height: 180vh !important;
 }
 
 .code-avt > iframe {
@@ -153,11 +153,31 @@ iframe {
 }
 
 .code-bdg > iframe {
-  min-height: 120vh !important;
+  min-height: 130vh !important;
+}
+
+.code-cards > iframe {
+  min-height: 230vh !important;
 }
 
 .code-btn > iframe {
-  min-height: 160vh !important;
+  min-height: 180vh !important;
+}
+
+.code-cart > iframe {
+  min-height: 150vh !important;
+}
+
+.code-social > iframe {
+  min-height: 110vh !important;
+}
+
+.code-textcards > iframe {
+  min-height: 130vh !important;
+}
+
+.code-navtopfixed > iframe {
+  min-height: 110vh !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -190,7 +210,7 @@ iframe {
     padding-top: 90px;
   }
 
-  .colors{
+  .colors {
     justify-content: initial;
   }
 
@@ -207,23 +227,84 @@ iframe {
     /* padding: 0 1rem; */
   }
 
-  .code-padding{
+  .code-padding {
     width: 29% !important;
   }
 
-  .code-padding2{
+  .code-padding2 {
     width: 34% !important;
   }
 
-  .code-text > iframe{
+  .code-text > iframe {
     min-height: 40vh !important;
   }
 
-  .code-alert{
+  .code-avt,
+  .code-avtbd {
+    width: 50%;
+  }
+
+  .code-avtsz {
+    width: 58%;
+  }
+
+  .code-avt > iframe {
+    min-height: 10vh !important;
+  }
+
+  .code-avtbd > iframe {
+    min-height: 70vh !important;
+  }
+
+  .code-avtsz > iframe {
+    min-height: 70vh !important;
+  }
+
+  .code-alert {
     width: 67% !important;
   }
 
-  .code-alert > iframe{
+  .code-alert > iframe {
     min-height: 90vh !important;
+  }
+
+  .code-bdg > iframe {
+    min-height: 80vh !important;
+  }
+
+  .code-btn > iframe {
+    min-height: 120vh !important;
+  }
+
+  .code-cards > iframe {
+    min-height: 150vh !important;
+  }
+
+  .code-cart {
+    width: 65%;
+  }
+
+  .code-cart > iframe {
+    min-height: 90vh !important;
+  }
+
+  .code-social {
+    width: 54% !important;
+  }
+
+  .code-social > iframe {
+    min-height: 60vh !important;
+  }
+
+  .code-textcards > iframe {
+    min-height: 90vh !important;
+  }
+
+  .code-navtopfixed{
+    width: 62%;
+  }
+
+  .code-navtopfixed > iframe {
+    min-height: 70vh !important;
   }
 }
