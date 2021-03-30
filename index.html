@@ -7,7 +7,11 @@
     <title>PandaUI</title>
     <link rel="stylesheet" href="doc-layout.css" />
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="./styles/atom-one-dark.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <script
       src="https://kit.fontawesome.com/17540dc721.js"
       crossorigin="anonymous"
@@ -35,13 +39,10 @@
         </a>
       </div>
       <div class="right-displaysection">
-        <div class="code code-cdn">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fpanda-ui.netlify.app%252Fstyle.css%2522%2520%252F%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="border-round">
+&lt;link rel="stylesheet" href="https://panda-ui.netlify.app/style.css" /&gt;
+
+</code></pre>
 
         <!-- <div class="code code-fa">
           <iframe
@@ -66,13 +67,12 @@
             The value given in single value padding & margin classes will be
             applied to all four sides
           </p>
-          <div class="code mt-1 code-padding">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522p-1%2520m-2%2522%253E%250A%2520%2520%253C%21--%2520Your%2520content%2520here%2520%2520--%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
+          <pre class="m-1-0"><code class="border-round">
+&lt;div class="p-1 m-2"&gt;
+  &lt;!-- Your content here  --&gt;
+&lt;/div&gt;
+
+</code></pre>
           <p class="light font-size-sm">
             <span class="medium">Class syntax padding:</span> p-value
           </p>
@@ -88,13 +88,12 @@
             applied to top and bottom and second value is for left and right
             sides
           </p>
-          <div class="code mt-1 code-padding">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522p-1-2%2520m-0-2%2522%253E%250A%2520%2520%253C%21--%2520Your%2520content%2520here%2520%2520--%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
+          <pre class="m-1-0"><code class="border-round">
+&lt;div class="p-1-2 m-0-2"&gt;
+  &lt;!-- Your content here  --&gt;
+&lt;/div&gt;
+
+</code></pre>
           <p class="light font-size-sm mt-05">
             <span class="medium">Class syntax padding:</span>
             p-firstValue-secondValue
@@ -112,13 +111,16 @@
             will be applied accordingly in the direction specified with given
             value
           </p>
-          <div class="code code-padding2 mt-1">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522pt-1%2520pb-1%2520pr-3%2520pl-0%2522%253E%250A%2520%2520%253C%21--%2520Your%2520content%2520here%2520%2520--%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522mt-1%2520mb-1%2520mr-3%2520ml-0%2522%253E%250A%2520%2520%253C%21--%2520Your%2520content%2520here%2520%2520--%253E%250A%253C%252Fdiv%253E"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
-          </div>
+          <pre class="m-1-0"><code class="border-round">
+&lt;div class="pt-1 pb-1 pr-3 pl-0"&gt;
+  &lt;!-- Your content here  --&gt;
+&lt;/div&gt;
+
+&lt;div class="mt-1 mb-1 mr-3 ml-0"&gt;
+  &lt;!-- Your content here  --&gt;
+&lt;/div&gt;
+
+</code></pre>
           <p class="light font-size-sm mt-05">
             <span class="medium">Class syntax padding:</span>
           </p>
@@ -270,47 +272,94 @@
         </div>
         <h2 class="mt-2">Borders</h2>
         <div>
-          <p class="medium font-size-sm mt-05">
-            Utility classes for borders
-          </p>
+          <p class="medium font-size-sm mt-05">Utility classes for borders</p>
           <div class="flex align-center flex-wrap colors">
-            <div class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray">
+            <div
+              class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray"
+            >
               <div class="width-100px min-height60px bgWhite bd1 bdGray"></div>
               <p class="center mt-05 medium font-size-sm">bd1</p>
               <p class="center mt-05 medium font-size-sm">bdGray</p>
             </div>
-             <div class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray">
+            <div
+              class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray"
+            >
               <div class="width-100px min-height60px bgWhite bd2 bdBlack"></div>
               <p class="center mt-05 medium font-size-sm">bd2</p>
               <p class="center mt-05 medium font-size-sm">bdBlack</p>
             </div>
-             <div class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray">
+            <div
+              class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray"
+            >
               <div class="width-100px min-height60px bgWhite bd3 bdBlue"></div>
               <p class="center mt-05 medium font-size-sm">bd3</p>
               <p class="center mt-05 medium font-size-sm">bdBlue</p>
             </div>
-             <div class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray">
+            <div
+              class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray"
+            >
               <div class="width-100px min-height60px bgWhite bd4 bdGreen"></div>
               <p class="center mt-05 medium font-size-sm">bd4</p>
               <p class="center mt-05 medium font-size-sm">bdGreen</p>
             </div>
-            <div class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray">
-              <div class="width-100px min-height60px bgWhite bd4 bdPurple"></div>
+            <div
+              class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray"
+            >
+              <div
+                class="width-100px min-height60px bgWhite bd4 bdPurple"
+              ></div>
               <p class="center mt-05 medium font-size-sm">bd4</p>
               <p class="center mt-05 medium font-size-sm">bdPurple</p>
             </div>
-            <div class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray">
-              <div class="width-100px min-height60px bgWhite bd4 bdYellow"></div>
+            <div
+              class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray"
+            >
+              <div
+                class="width-100px min-height60px bgWhite bd4 bdYellow"
+              ></div>
               <p class="center mt-05 medium font-size-sm">bd4</p>
               <p class="center mt-05 medium font-size-sm">bdYellow</p>
             </div>
-            <div class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray">
-              <div class="width-100px min-height60px bgWhite bd2 bdBlack border-round"></div>
+            <div
+              class="flex flex-column align-center mr-1 mt-1 p-05 bd1 bdGray"
+            >
+              <div
+                class="width-100px min-height60px bgWhite bd2 bdBlack border-round"
+              ></div>
               <p class="center mt-05 medium font-size-sm">bd2</p>
               <p class="center mt-05 medium font-size-sm">border-round</p>
             </div>
           </div>
         </div>
+        <h2 class="mt-2">Flex</h2>
+        <table border="1">
+          <thead>
+            <th>Property</th>
+            <th>Utility</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>display: flex;</td>
+              <td>flex</td>
+            </tr>
+            <tr>
+              <td>justify-content: space-between</td>
+              <td>justify-sb</td>
+            </tr>
+            <tr>
+              <td>align-items: center</td>
+              <td>align-center</td>
+            </tr>
+            <tr>
+              <td>flex-direction: column</td>
+              <td>flex-column</td>
+            </tr>
+            <tr>
+              <td>flex-wrap: wrap;</td>
+              <td>flex-wrap</td>
+            </tr>
+          </tbody>
+        </table>
         <h2 class="mt-2">Text Utilities</h2>
         <div class="mt-2">
           <h1 class="font-size-xl extra-bold mt-02">
@@ -329,13 +378,14 @@
             This is extra small text with extra light weight.
           </h1>
         </div>
-        <div class="code mt-2 code-text">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522font-size-xl%2520extra-bold%2522%253EThis%2520is%2520extra%2520large%2520text%2520with%2520extra%2520bold%2520weight%253C%252Fh1%253E%250A%253Ch1%2520class%253D%2522font-size-l%2520bold%2522%253EThis%2520is%2520large%2520text%2520with%2520bold%2520weight.%253C%252Fh1%253E%250A%253Ch1%2520class%253D%2522font-size-m%2520medium%2522%253EThis%2520is%2520medium%2520text%2520with%2520medium%2520weight.%253C%252Fh1%253E%250A%253Ch1%2520class%253D%2522font-size-sm%2520light%2522%253EThis%2520is%2520small%2520text%2520with%2520light%2520weight.%253C%252Fh1%253E%250A%253Ch1%2520class%253D%2522font-size-xsm%2520extra-light%2522%253EThis%2520is%2520extra%2520small%2520text%2520with%2520extra%2520light%2520weight.%253C%252Fh1%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;h1 class="font-size-xl extra-bold"&gt;This is extra large text with extra bold weight&lt;/h1&gt;
+&lt;h1 class="font-size-l bold"&gt;This is large text with bold weight.&lt;/h1&gt;
+&lt;h1 class="font-size-m medium"&gt;This is medium text with medium weight.&lt;/h1&gt;
+&lt;h1 class="font-size-sm light"&gt;This is small text with light weight.&lt;/h1&gt;
+&lt;h1 class="font-size-xsm extra-light"&gt;This is extra small text with extra light weight.&lt;/h1&gt;
+
+</code></pre>
 
         <h2 class="mt-2">Alerts</h2>
         <div class="grid-container stacked-list mt-2">
@@ -370,13 +420,39 @@
             <i class="fas fa-times-circle icon-med alertblue alert-close"></i>
           </div>
         </div>
-        <div class="code code-alert mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520p-1%2520bgLightRed%2520flex%2520align-center%2520justify-sb%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-content%2520flex%2520align-center%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520mr-1%2520icon-med%2520alertred%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cp%253EThere%2520was%2520an%2520error%2520processing%2520your%2520request%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520icon-med%2520alertred%2520alert-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520p-1%2520bgLightGreen%2520flex%2520align-center%2520justify-sb%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert-content%2520flex%2520align-center%2522%253E%250A%2520%2520%2509%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520mr-1%2520icon-med%2520alertgreen%2522%253E%253C%252Fi%253E%250A%2520%2520%2509%253Cp%253EData%2520uploaded%2520to%2520the%2520server.%2520Fire%2520on%21%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520icon-med%2520alertgreen%2520alert-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520p-1%2520bgLightYellow%2520flex%2520align-center%2520justify-sb%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2520flex%2520align-center%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520mr-1%2520icon-med%2520alertyellow%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253Cp%253ESeems%2520your%2520account%2520is%2520about%2520to%2520expire%252C%2520upgrade%2520now%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520icon-med%2520alertyellow%2520alert-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520p-1%2520bgLightBlue%2520flex%2520align-center%2520justify-sb%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522alert-content%2520flex%2520align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520mr-1%2520icon-med%2520alertblue%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253EPanda%2520is%2520going%2520live%2520on%2520August%252030th.%2520Get%2520ready%21%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520icon-med%2520alertblue%2520alert-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;div class="alert p-1 bgLightRed flex align-center justify-sb"&gt;
+  &lt;div class="alert-content flex align-center"&gt;
+    &lt;i class="fas fa-exclamation-circle mr-1 icon-med alertred"&gt;&lt;/i&gt;
+    &lt;p&gt;There was an error processing your request&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;i class="fas fa-times-circle icon-med alertred alert-close"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;div class="alert p-1 bgLightGreen flex align-center justify-sb"&gt;
+  &lt;div class="alert-content flex align-center"&gt;
+  	&lt;i class="fas fa-check-circle mr-1 icon-med alertgreen"&gt;&lt;/i&gt;
+  	&lt;p&gt;Data uploaded to the server. Fire on!&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;i class="fas fa-times-circle icon-med alertgreen alert-close"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;div class="alert p-1 bgLightYellow flex align-center justify-sb"&gt;
+   &lt;div class="alert-content flex align-center"&gt;
+     &lt;i class="fas fa-exclamation-triangle mr-1 icon-med alertyellow"&gt;&lt;/i&gt;
+     &lt;p&gt;Seems your account is about to expire, upgrade now&lt;/p&gt;
+   &lt;/div&gt;
+   &lt;i class="fas fa-times-circle icon-med alertyellow alert-close"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;div class="alert p-1 bgLightBlue flex align-center justify-sb"&gt;
+   &lt;div class="alert-content flex align-center"&gt;
+      &lt;i class="fas fa-info-circle mr-1 icon-med alertblue"&gt;&lt;/i&gt;
+      &lt;p&gt;Panda is going live on August 30th. Get ready!&lt;/p&gt;
+   &lt;/div&gt;
+   &lt;i class="fas fa-times-circle icon-med alertblue alert-close"&gt;&lt;/i&gt;
+&lt;/div&gt;
+        </code></pre>
         <h2 class="mt-2">Avatars</h2>
         <div class="avatars mt-2 flex align-center justify-sb">
           <div class="avatar-wrapper circle av-sm">
@@ -411,13 +487,12 @@
             />
           </div>
         </div>
-        <div class="code code-avt mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;div class="avatar-wrapper circle av-sm"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+</code></pre>
         <div class="avatars mt-2 flex align-center justify-sb">
           <div class="avatar-wrapper circle av-sm bd4 bdPurple">
             <img
@@ -452,15 +527,26 @@
           </div>
         </div>
 
-        <div class="code code-avtbd mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2520bd4%2520bdPurple%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2520bd4%2520bdBlue%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2520bd4%2520bdGreen%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2520bd3%2520bdGray%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;div class="avatar-wrapper circle av-sm bd4 bdPurple"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-sm bd4 bdBlue"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-sm bd4 bdGreen"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-sm bd3 bdGray"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+</code></pre>
         <div class="avatars mt-2 flex align-center justify-sb flex-wrap">
-          <div class="avatar-wrapper circle av-vvsm">
+          <div class="avatar-wrapper circle av-tiny">
             <img
               class="avatar-img circle"
               src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
@@ -498,13 +584,28 @@
             />
           </div>
         </div>
-        <div class="code code-avtsz mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-vvsm%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-mini%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-md%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-lg%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;div class="avatar-wrapper circle av-tiny"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-mini"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-sm"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-md"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-lg"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt="" /&gt;
+&lt;/div&gt;
+
+</code></pre>
         <h2 class="mt-2">Badge</h2>
         <div class="badges mt-2 p-12 flex align-center justify-sb">
           <i class="fas fa-bell icon-lg icon-badge">
@@ -546,13 +647,31 @@
             ></span>
           </div>
         </div>
-        <div class="code code-bdg mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ci%2520class%253D%2522fas%2520fa-bell%2520icon-lg%2520icon-badge%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520circle%2520bdg-tr%2520bdg-num%2520bdg-blue%2522%253E4%253C%252Fspan%253E%250A%253C%252Fi%253E%250A%250A%253Ci%2520class%253D%2522fas%2520fa-bell%2520icon-lg%2520icon-badge%2522%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520circle%2520bdg-tr%2520bdg-dot%2520bdg-red%2520bd4%2520bdWhite%2522%253E%253C%252Fspan%253E%250A%253C%252Fi%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%252F%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-avtr%2520circle%2520bdg-dot%2520bdg-green%2520bd4%2520bdWhite%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%252F%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-avtr%2520circle%2520bdg-dot%2520bdg-red%2520bd4%2520bdWhite%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2522%253E%250A%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522your_img_url%2522%2520alt%253D%2522%2522%252F%253E%250A%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-avtr%2520circle%2520bdg-dot%2520bdg-gray%2520bd4%2520bdWhite%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;i class="fas fa-bell icon-lg icon-badge"&gt;
+   &lt;span class="badge circle bdg-tr bdg-num bdg-blue"&gt;4&lt;/span&gt;
+&lt;/i&gt;
+
+&lt;i class="fas fa-bell icon-lg icon-badge"&gt;
+   &lt;span class="badge circle bdg-tr bdg-dot bdg-red bd4 bdWhite"&gt;&lt;/span&gt;
+&lt;/i&gt;
+
+&lt;div class="avatar-wrapper circle av-sm"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt=""/&gt;
+   &lt;span class="badge badge-avtr circle bdg-dot bdg-green bd4 bdWhite"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-sm"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt=""/&gt;
+   &lt;span class="badge badge-avtr circle bdg-dot bdg-red bd4 bdWhite"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="avatar-wrapper circle av-sm"&gt;
+   &lt;img class="avatar-img circle" src="your_img_url" alt=""/&gt;
+   &lt;span class="badge badge-avtr circle bdg-dot bdg-gray bd4 bdWhite"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+</code></pre>
         <h2 class="mt-2">Buttons</h2>
         <div class="buttons mt-1 flex justify-sb align-center flex-wrap">
           <button class="m-0-05 btn btn-col btn-primary border-round">
@@ -604,13 +723,61 @@
             <i class="fas fa-bars menu icon-lg"></i>
           </button>
         </div>
-        <div class="code code-btn mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-primary%2520border-round%2522%253E%250A%2520%2520%2520Primary%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-secondary%2520border-round%2522%253E%250A%2520%2520%2520Secondary%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-primary%2520border-round%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520icon-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520Add%2520to%2520cart%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-danger%2520border-round%2522%253E%250A%2520%2520%2520Danger%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-success%2520border-round%2522%253E%250A%2520%2520%2520Success%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-warning%2520border-round%2522%253E%250A%2520%2520%2520Warning%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253ELink%2520Button%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-address-card%2520icon-xlg%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-text-down%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-address-card%2520icon-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522mt-05%2522%253EProfile%253C%252Fp%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-text-right%2522%253E%250A%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-address-card%2520icon-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cp%253EProfile%253C%252Fp%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-lg%2520btn-primary%2520border-round%2522%253E%250A%2520%2520%2520%2520Primary%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-block%2520btn-primary%2520border-round%2522%253E%250A%2520%2520%2520%2520Primary%2520Button%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-primary%2520btn-float%2520bottom-right5%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2520menu%2520icon-lg%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;button class="btn btn-col btn-primary border-round"&gt;
+   Primary Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-col btn-secondary border-round"&gt;
+   Secondary Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-col btn-primary border-round"&gt;
+   &lt;i class="fas fa-shopping-cart icon-sm"&gt;&lt;/i&gt;
+   Add to cart
+&lt;/button&gt;
+
+&lt;button class="btn btn-col btn-danger border-round"&gt;
+   Danger Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-col btn-success border-round"&gt;
+   Success Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-col btn-warning border-round"&gt;
+   Warning Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-link"&gt;Link Button&lt;/button&gt;
+
+&lt;button class="btn btn-icon"&gt;
+   &lt;i class="far fa-address-card icon-xlg"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;button class="btn btn-icon icon-text-down"&gt;
+   &lt;i class="far fa-address-card icon-lg"&gt;&lt;/i&gt;
+   &lt;p class="mt-05"&gt;Profile&lt;/p&gt;
+&lt;/button&gt;
+
+&lt;button class="btn btn-icon icon-text-right"&gt;
+   &lt;i class="far fa-address-card icon-lg"&gt;&lt;/i&gt;
+    &lt;p&gt;Profile&lt;/p&gt;
+&lt;/button&gt;
+
+&lt;button class="btn btn-col btn-lg btn-primary border-round"&gt;
+    Primary Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-col btn-block btn-primary border-round"&gt;
+    Primary Button
+&lt;/button&gt;
+
+&lt;button class="btn btn-col btn-primary btn-float bottom-right5"&gt;
+    &lt;i class="fas fa-bars menu icon-lg"&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+</code></pre>
         <h2 class="mt-2">Cards</h2>
         <div class="grid-container web-four mob-two mt-2">
           <div class="card-product p-05 bd1 bdGray">
@@ -704,13 +871,63 @@
           </div>
         </div>
 
-        <div class="code code-cards mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-product%2520p-05%2520bd1%2520bdGray%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522product-img%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2509%253Ch1%2520class%253D%2522product-heading%2520mt-1%2522%253ECalvin%2520Klein%2520Original%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520wishlist%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon-sm%2520wishlist-icon%2520active%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522product-desc%2520mt-05%2522%253EMen%2520Slim%2520Fit%2520Casual%2520Shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522price%2520mt-05%2522%253ERs%2520999%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522og-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-cut%2522%253ERs.%25201999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount%2522%253E%2855%2525%2520Off%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-primary%2520mt-1%2520border-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-product%2520card-badge%2520p-05%2520bd1%2520bdGray%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522product-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520New%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522top-triangle%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522bottom-triangle%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522product-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ch1%2520class%253D%2522product-heading%2520mt-1%2522%253ELevis%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520wishlist%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon-sm%2520wishlist-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522product-desc%2520mt-05%2522%253EMen%2520Slim%2520Fit%2520Casual%2520Shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522price%2520mt-05%2522%253ERs%2520999%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522og-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-cut%2522%253ERs.%25201999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount%2522%253E%2855%2525%2520Off%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-col%2520btn-primary%2520mt-1%2520border-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520For%2520no%2520border%2520no%2520shadow%2520%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522card-product%2520p-05%2522%253E%250A%2520%2520%253C%21--%2520Card%2520content%2520--%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520For%2520card%2520with%2520shadow%2520%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522card-product%2520p-05%2520card-shadow%2522%253E%250A%2520%2520%253C%21--%2520Card%2520content%2520--%253E%250A%253C%252Fdiv%253E%250A"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+       <pre class="m-1-0"><code class="html border-round">
+&lt;div class="card-product p-05 bd1 bdGray"&gt;
+   &lt;div class="product-img"&gt;
+     &lt;img src="" alt="" /&gt;
+    &lt;/div&gt;
+  	&lt;h1 class="product-heading mt-1"&gt;Calvin Klein Original&lt;/h1&gt;
+    &lt;button class="btn btn-icon wishlist"&gt;
+       &lt;i class="fas fa-heart icon-sm wishlist-icon active"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+    &lt;p class="product-desc mt-05"&gt;Men Slim Fit Casual Shirt&lt;/p&gt;
+    &lt;h2 class="price mt-05"&gt;Rs 999&lt;/h2&gt;
+    &lt;div class="og-price"&gt;
+       &lt;span class="price-cut"&gt;Rs. 1999&lt;/span&gt;
+       &lt;span class="discount"&gt;(55% Off)&lt;/span&gt;
+    &lt;/div&gt;
+	&lt;button class="btn btn-col btn-primary mt-1 border-round"&gt;
+       Add to Cart
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="card-product card-badge p-05 bd1 bdGray"&gt;
+   &lt;div class="product-badge"&gt;
+      New
+      &lt;span class="top-triangle"&gt;&lt;/span&gt;
+      &lt;span class="bottom-triangle"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+	&lt;div class="product-img"&gt;
+       &lt;img src="" alt="" /&gt;
+    &lt;/div&gt;
+    &lt;h1 class="product-heading mt-1"&gt;Levis&lt;/h1&gt;
+    &lt;button class="btn btn-icon wishlist"&gt;
+       &lt;i class="fas fa-heart icon-sm wishlist-icon"&gt;&lt;/i&gt;
+     &lt;/button&gt;
+     &lt;p class="product-desc mt-05"&gt;Men Slim Fit Casual Shirt&lt;/p&gt;
+     &lt;h2 class="price mt-05"&gt;Rs 999&lt;/h2&gt;
+     &lt;div class="og-price"&gt;
+       &lt;span class="price-cut"&gt;Rs. 1999&lt;/span&gt;
+       &lt;span class="discount"&gt;(55% Off)&lt;/span&gt;
+     &lt;/div&gt;
+     &lt;button class="btn btn-col btn-primary mt-1 border-round"&gt;
+        Add to Cart
+      &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- For no border no shadow  --&gt;
+
+&lt;div class="card-product p-05"&gt;
+  &lt;!-- Card content --&gt;
+&lt;/div&gt;
+
+&lt;!-- For card with shadow  --&gt;
+
+&lt;div class="card-product p-05 card-shadow"&gt;
+  &lt;!-- Card content --&gt;
+&lt;/div&gt;
+
+</code></pre>
 
         <div class="stacked-list mt-1">
           <div class="card-cart p-1 bd1 bdGray">
@@ -746,13 +963,38 @@
             </div>
           </div>
         </div>
-        <div class="code code-cart mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card-cart%2520p-1%2520bd1%2520bdGray%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522cart-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522cart-product-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522cart-product-desc%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522product-heading%2522%253ELevis%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522product-desc%2520mt-05%2522%253EMen%2520Slim%2520Fit%2520Casual%2520Shirt%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cdiv%2520class%253D%2522change-quantity%2520mt-05%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520btn-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-minus%2520icon-xxsm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522quantity%2520bd1%2520bdGray%2520m-0-05%2522%253E1%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520btn-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2520icon-xxsm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2520colorRed%2520mt-1%2522%253ERemove%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2520ml-05%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Move%2520to%2520Wishlist%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522cart-product-price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522price%2522%253ERs%2520999%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522price-cut%2522%253ERs.%25201999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522discount%2522%253E%2855%2525%2520Off%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;div class="card-cart p-1 bd1 bdGray"&gt;
+     &lt;div class="cart-details"&gt;
+        &lt;div class="cart-product-img"&gt;
+           &lt;img src="" alt="" /&gt;
+         &lt;/div&gt;
+         &lt;div class="cart-product-desc"&gt;
+            &lt;h1 class="product-heading"&gt;Levis&lt;/h1&gt;
+            &lt;p class="product-desc mt-05"&gt;Men Slim Fit Casual Shirt&lt;/p&gt;
+          	&lt;div class="change-quantity mt-05"&gt;
+            &lt;button class="btn btn-icon btn-cart"&gt;
+              &lt;i class="fas fa-minus icon-xxsm"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;h2 class="quantity bd1 bdGray m-0-05"&gt;1&lt;/h2&gt;
+            &lt;button class="btn btn-icon btn-cart"&gt;
+               &lt;i class="fas fa-plus icon-xxsm"&gt;&lt;/i&gt;
+             &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;button class="btn btn-link colorRed mt-1"&gt;Remove&lt;/button&gt;
+          &lt;button class="btn btn-link ml-05 mt-1"&gt;
+             Move to Wishlist
+          &lt;/button&gt;
+       	&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="cart-product-price"&gt;
+          &lt;h2 class="price"&gt;Rs 999&lt;/h2&gt;
+          &lt;span class="price-cut"&gt;Rs. 1999&lt;/span&gt;
+          &lt;span class="discount"&gt;(55% Off)&lt;/span&gt;
+       &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
         <div class="stacked-list mt-1">
           <div class="card-social p-1 bd1 bdGray">
             <div class="profile-img">
@@ -781,13 +1023,28 @@
             </div>
           </div>
         </div>
-        <div class="code code-social mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-social%2520p-1%2520bd1%2520bdGray%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522profile-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-wrapper%2520circle%2520av-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520circle%2522%2520src%253D%2522%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522social-post-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522profile-details%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522profile-user%2522%253ECharles%2520Johnson%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522profile-username%2522%253E%2540charliejohn%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522post-time%2522%253E12h%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522post-text%2520mt-05%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520like%2520icon-med%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;div class="card-social p-1 bd1 bdGray"&gt;
+    &lt;div class="profile-img"&gt;
+       &lt;div class="avatar-wrapper circle av-sm"&gt;
+          &lt;img class="avatar-img circle" src="" alt="" /&gt;
+        &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class="social-post-text"&gt;
+        &lt;div class="profile-details"&gt;
+          &lt;h1 class="profile-user"&gt;Charles Johnson&lt;/h1&gt;
+          &lt;p class="profile-username"&gt;@charliejohn&lt;/p&gt;
+          &lt;p class="post-time"&gt;12h&lt;/p&gt;
+      	&lt;/div&gt;
+        &lt;p class="post-text mt-05"&gt;
+           Lorem ipsum dolor sit amet consectetur!
+        &lt;/p&gt;
+        &lt;button class="btn btn-icon mt-1"&gt;
+            &lt;i class="fas fa-heart like icon-med"&gt;&lt;/i&gt;
+         &lt;/button&gt;
+     &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
         <div class="grid-container web-three mob-one mt-2">
           <div class="card-text-overlay">
             <img
@@ -829,15 +1086,41 @@
             </p>
           </div>
         </div>
-        <div class="code code-textcards mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-text-overlay%2522%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522overlay%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2520mt-1%2522%253EThis%2520is%2520overlay%2520heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-text-overlay%2520card-dismiss%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-times-circle%2520icon-med%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%253Cimg%2520src%253D%2522%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522overlay%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2520mt-1%2522%253EThis%2520is%2520overlay%2520heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-text%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520%250A%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-textonly%2520p-1%2520card-shadow%2520border-round%2520bgLightBlue%2522%253E%250A%2520%2520%2520%253Ch2%2520class%253D%2522card-heading%2520mt-1%2522%253EThis%2520is%2520text%2520heading%253C%252Fh2%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-text%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%252C%2520sit%2520amet%2520consectetur%2520%250A%2520%2520%2520%253C%252Fp%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;div class="card-text-overlay"&gt;
+   &lt;img src="" alt="" /&gt;
+   &lt;div class="overlay p-1"&gt;
+      &lt;h2 class="card-heading mt-1"&gt;This is overlay heading&lt;/h2&gt;
+      &lt;p class="card-text mt-1"&gt;
+         Lorem ipsum dolor, sit amet consectetur
+      &lt;/p&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card-text-overlay card-dismiss"&gt;
+   &lt;button class="btn btn-icon dismiss"&gt;
+      &lt;i class="far fa-times-circle icon-med"&gt;&lt;/i&gt;
+   &lt;/button&gt;
+   &lt;img src="" alt="" /&gt;
+   &lt;div class="overlay p-1"&gt;
+     &lt;h2 class="card-heading mt-1"&gt;This is overlay heading&lt;/h2&gt;
+     &lt;p class="card-text mt-1"&gt;
+        Lorem ipsum dolor, sit amet consectetur 
+     &lt;/p&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card-textonly p-1 card-shadow border-round bgLightBlue"&gt;
+   &lt;h2 class="card-heading mt-1"&gt;This is text heading&lt;/h2&gt;
+   &lt;p class="card-text mt-1"&gt;
+      Lorem ipsum dolor, sit amet consectetur 
+   &lt;/p&gt;
+&lt;/div&gt;
+        </code></pre>
         <h2 class="mt-2">Navigation</h2>
-        <h2 class="font-size-m mt-1">- Top fixed navbar</h2>
+        <h2 class="font-size-m mt-1">
+          - Top fixed navbar (with only 3 options)
+        </h2>
         <nav class="nav p-1 box-shadow-down mt-1">
           <h1 class="font-size-m">Brand Name</h1>
           <div class="menu">
@@ -859,13 +1142,33 @@
             </button>
           </div>
         </nav>
-        <div class="code code-navtopfixed mt-2">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav%2520top-fixed%2520p-1%2520box-shadow-down%2522%253E%250A%2520%2520%253Ch1%2520class%253D%2522font-size-m%2522%253EBrand%2520Name%253C%252Fh1%253E%250A%2520%2520%253Cdiv%2520class%253D%2522menu%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-text-down%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-store%2520icon-med%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522mt-05%2522%253EStore%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-text-down%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520icon-med%2520icon-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520circle%2520bdg-tr%2520bdg-num%2520bdg-blue%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522mt-05%2522%253ECart%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-icon%2520icon-text-down%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon-med%2520icon-badge%2520colorRed%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520circle%2520bdg-tr%2520bdg-num%2520bdg-blue%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522mt-05%2522%253EWishlist%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
+        <pre class="m-1-0"><code class="html border-round">
+&lt;nav class="nav top-fixed p-1 box-shadow-down"&gt;
+  &lt;h1 class="font-size-m"&gt;Brand Name&lt;/h1&gt;
+  &lt;div class="menu"&gt;
+    &lt;button class="btn btn-icon icon-text-down"&gt;
+      &lt;i class="fas fa-store icon-med"&gt;&lt;/i&gt;
+      &lt;p class="mt-05"&gt;Store&lt;/p&gt;
+    &lt;/button&gt;
+    &lt;button class="btn btn-icon icon-text-down"&gt;
+      &lt;i class="fas fa-shopping-cart icon-med icon-badge"&gt;
+        &lt;span class="badge circle bdg-tr bdg-num bdg-blue"&gt;4&lt;/span&gt;
+      &lt;/i&gt;
+      &lt;p class="mt-05"&gt;Cart&lt;/p&gt;
+    &lt;/button&gt;
+    &lt;button class="btn btn-icon icon-text-down"&gt;
+      &lt;i class="fas fa-heart icon-med icon-badge colorRed"&gt;
+        &lt;span class="badge circle bdg-tr bdg-num bdg-blue"&gt;1&lt;/span&gt;
+      &lt;/i&gt;
+      &lt;p class="mt-05"&gt;Wishlist&lt;/p&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+        </code></pre>
+        <h2 class="font-size-m mt-1">
+          - Left fixed Navbar (floats from right on mobile)
+        </h2>
+        <nav class="leftfixed-nav mt-2"></nav>
         <h2 class="center mt-2">Grids</h2>
         <div class="grid-container web-two mob-one p-1 bgGray mt-2">
           <div class="content bgWhite"></div>
@@ -881,20 +1184,6 @@
           <div class="content bgWhite"></div>
           <div class="content bgWhite"></div>
           <div class="content bgWhite"></div>
-        </div>
-        <div class="code">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-container%2520two%2520p-1%2520bgGray%2520mt-2%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522content%2520bgWhite%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522content%2520bgWhite%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <div class="code">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-container%2520three%2520p-1%2520bgGray%2520mt-2%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522content%2520bgWhite%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522content%2520bgWhite%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522content%2520bgWhite%2522%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
         </div>
       </div>
     </div>

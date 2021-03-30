@@ -91,9 +91,8 @@
   overflow: hidden !important;
 } */
 
-.code {
+/* .code {
   width: 100%;
-  /* padding: 0 1rem; */
 }
 
 iframe {
@@ -103,12 +102,7 @@ iframe {
   transform: scale(1);
   overflow: hidden;
   display: block !important;
-  /* background-color: khaki; */
-}
-
-.code > iframe body::-webkit-scrollbar {
-  background-color: aqua !important;
-}
+} */
 
 .right-displaysection {
   width: 100%;
@@ -120,64 +114,21 @@ iframe {
   justify-content: space-between;
 }
 
-.code-cdn > iframe {
-  min-height: 20vh !important;
+table{
+  width: 100%;
 }
 
-.code-padding {
-  height: 25vh;
+tr{
+  border: none;
 }
 
-.code-padding2 {
-  height: 35vh;
+th{
+  font-size: 1.2rem;
 }
 
-.code-text > iframe {
-  min-height: 55vh !important;
-}
-
-.code-alert > iframe {
-  min-height: 180vh !important;
-}
-
-.code-avt > iframe {
-  min-height: 28vh !important;
-}
-
-.code-avtbd > iframe {
-  min-height: 80vh !important;
-}
-
-.code-avtsz > iframe {
-  min-height: 95vh !important;
-}
-
-.code-bdg > iframe {
-  min-height: 130vh !important;
-}
-
-.code-cards > iframe {
-  min-height: 230vh !important;
-}
-
-.code-btn > iframe {
-  min-height: 180vh !important;
-}
-
-.code-cart > iframe {
-  min-height: 150vh !important;
-}
-
-.code-social > iframe {
-  min-height: 110vh !important;
-}
-
-.code-textcards > iframe {
-  min-height: 130vh !important;
-}
-
-.code-navtopfixed > iframe {
-  min-height: 110vh !important;
+td{
+  text-align: center;
+  letter-spacing: 1.5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -212,99 +163,5 @@ iframe {
 
   .colors {
     justify-content: initial;
-  }
-
-  iframe {
-    min-height: 30vh !important;
-  }
-
-  .code-alert > iframe {
-    height: 90vh;
-  }
-
-  .code {
-    width: 60%;
-    /* padding: 0 1rem; */
-  }
-
-  .code-padding {
-    width: 29% !important;
-  }
-
-  .code-padding2 {
-    width: 34% !important;
-  }
-
-  .code-text > iframe {
-    min-height: 40vh !important;
-  }
-
-  .code-avt,
-  .code-avtbd {
-    width: 50%;
-  }
-
-  .code-avtsz {
-    width: 58%;
-  }
-
-  .code-avt > iframe {
-    min-height: 10vh !important;
-  }
-
-  .code-avtbd > iframe {
-    min-height: 70vh !important;
-  }
-
-  .code-avtsz > iframe {
-    min-height: 70vh !important;
-  }
-
-  .code-alert {
-    width: 67% !important;
-  }
-
-  .code-alert > iframe {
-    min-height: 90vh !important;
-  }
-
-  .code-bdg > iframe {
-    min-height: 80vh !important;
-  }
-
-  .code-btn > iframe {
-    min-height: 120vh !important;
-  }
-
-  .code-cards > iframe {
-    min-height: 150vh !important;
-  }
-
-  .code-cart {
-    width: 65%;
-  }
-
-  .code-cart > iframe {
-    min-height: 90vh !important;
-  }
-
-  .code-social {
-    width: 54% !important;
-  }
-
-  .code-social > iframe {
-    min-height: 60vh !important;
-  }
-
-  .code-textcards > iframe {
-    min-height: 90vh !important;
-  }
-
-  .code-navtopfixed{
-    width: 62%;
-  }
-
-  .code-navtopfixed > iframe {
-    min-height: 70vh !important;
   }
 }
