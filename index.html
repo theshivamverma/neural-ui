@@ -871,7 +871,7 @@
           </div>
         </div>
 
-       <pre class="m-1-0"><code class="html border-round">
+        <pre class="m-1-0"><code class="html border-round">
 &lt;div class="card-product p-05 bd1 bdGray"&gt;
    &lt;div class="product-img"&gt;
      &lt;img src="" alt="" /&gt;
@@ -1168,7 +1168,43 @@
         <h2 class="font-size-m mt-1">
           - Left fixed Navbar (floats from right on mobile)
         </h2>
-        <nav class="leftfixed-nav mt-2"></nav>
+        <nav class="leftfixed-nav mt-2">
+          <h1 class="font-size-m">Brand Name</h1>
+        </nav>
+
+        <h2 class="mt-2">Input</h2>
+        <div class="stacked-list mt-1">
+          <label class="inputgroup">
+            <input class="input-textbox focus-blue" placeholder=" " />
+            <span class="input-label">Name</span>
+          </label>
+          <label class="inputgroup error">
+            <input class="input-textbox" placeholder=" " />
+            <span class="input-label">Name</span>
+            <span class="error-text">Error in your input</span>
+          </label>
+        </div>
+        <h2 class="mt-2">Images</h2>
+        <div class="grid-container web-two mob-one mt-1">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1588392382834-a891154bca4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80"
+              alt=""
+              class="responsive-image"
+            />
+          </div>
+          <div class="center">
+            <img
+              src="https://images.unsplash.com/photo-1588392382834-a891154bca4d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80"
+              alt=""
+              class="width-200px height-200px circle"
+            />
+          </div>
+        </div>
+        <h2 class="mt-2">Modal</h2>
+        <button class="btn btn-col btn-secondary mt-1" id="modal-show">
+          See Modal
+        </button>
         <h2 class="center mt-2">Grids</h2>
         <div class="grid-container web-two mob-one p-1 bgGray mt-2">
           <div class="content bgWhite"></div>
@@ -1187,5 +1223,22 @@
         </div>
       </div>
     </div>
+    <div class="modal-overlay" id="modal">
+      <div class="modal-container p-1 border-round">
+        <h1 class="center font-size-l bold">Are you sure, you are a robot?</h1>
+        <div class="modal-buttons">
+          <button class="btn btn-col btn-danger border-round" id="modal-close">
+            No !!
+          </button>
+          <button
+            class="btn btn-col btn-success border-round"
+            id="modal-success"
+          >
+            Yes
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

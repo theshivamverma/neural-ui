@@ -14,7 +14,7 @@
   position: fixed;
   background-color: #fff;
   top: 0;
-  z-index: 999999;
+  z-index: 9;
 }
 
 .logo {
@@ -60,7 +60,7 @@
   position: fixed;
   top: 70px;
   right: -100%;
-  z-index: 999;
+  z-index: 9;
   height: 100vh;
   text-align: center;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
@@ -114,21 +114,32 @@ iframe {
   justify-content: space-between;
 }
 
-table{
+table {
   width: 100%;
 }
 
-tr{
+tr {
   border: none;
 }
 
-th{
+th {
   font-size: 1.2rem;
 }
 
-td{
+td {
   text-align: center;
   letter-spacing: 1.5px;
+}
+
+.display-container {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  display: none;
+}
+
+.display-container.active{
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -163,5 +174,9 @@ td{
 
   .colors {
     justify-content: initial;
+  }
+
+  .display-container {
+    height: 50vh;
   }
 }
