@@ -2,73 +2,22 @@
   --c: #fff;
 }
 
+body::-webkit-scrollbar{
+  background-color: transparent;
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #dfe4ea;
+  border-radius: 1rem;
+}
+
 /* page layout */
-.doc-nav {
-  width: 100%;
-  height: 70px;
-  box-shadow: var(--box-shadow-down);
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  background-color: #fff;
-  top: 0;
-  z-index: 9;
-}
-
-.logo {
-  width: 40% !important;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.logo > img {
-  height: 60%;
-  object-fit: cover;
-}
-
-.logo > h3 {
-  font-size: 1.2rem;
-}
-
-.icons {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.github {
-  font-size: 2rem;
-}
-
-.menu {
-  font-size: 1.3rem;
-}
 
 .content {
   width: 100%;
   display: flex;
   position: relative;
-}
-
-.leftnavbar {
-  width: 60%;
-  position: fixed;
-  top: 70px;
-  right: -100%;
-  z-index: 9;
-  height: 100vh;
-  text-align: center;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-  background-color: #fff;
-}
-
-#menu:target {
-  right: 0;
 }
 
 /* .code {
@@ -107,7 +56,6 @@ iframe {
 .right-displaysection {
   width: 100%;
   padding: 0 0.5rem;
-  padding-top: 90px;
 }
 
 .colors {
@@ -131,52 +79,28 @@ td {
   letter-spacing: 1.5px;
 }
 
-.display-container {
-  width: 100%;
-  height: 50vh;
-  position: relative;
-  display: none;
+.float-display{
+  visibility: hidden;
 }
 
-.display-container.active{
-  display: block;
+.float-display.active{
+  visibility: visible;
 }
 
 @media screen and (min-width: 768px) {
-  nav {
-    padding: 0 4rem;
-  }
-  .logo {
-    width: 11%;
-  }
-  .logo > h3 {
-    font-size: 1.3rem;
-  }
-  .logo > img {
-    height: 70%;
-  }
   .content {
     width: 100%;
     display: flex;
     position: relative;
   }
 
-  .leftnavbar {
-    width: 25%;
-    position: sticky;
-  }
-
   .right-displaysection {
-    width: 75%;
-    padding: 0 5rem;
-    padding-top: 90px;
+    width: 100%;
+    padding: 0 4rem 0 0;
+    padding-left: calc(25% + 4rem);
   }
 
   .colors {
     justify-content: initial;
-  }
-
-  .display-container {
-    height: 50vh;
   }
 }
