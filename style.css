@@ -1149,6 +1149,7 @@ html {
 .product-img {
   height: 200px;
   width: 100%;
+  position: relative;
 }
 
 .product-img > img {
@@ -1187,8 +1188,8 @@ html {
 
 .wishlist {
   position: absolute;
-  top: 50%;
-  right: 1%;
+  bottom: -8%;
+  right: -3%;
   background-color: var(--fadedred);
   width: 30px;
   height: 30px;
