@@ -2,12 +2,12 @@
   --c: #fff;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   background-color: transparent;
   width: 0.8rem;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   background-color: #dfe4ea;
   border-radius: 1rem;
 }
@@ -79,12 +79,34 @@ td {
   letter-spacing: 1.5px;
 }
 
-.float-display{
+.float-display {
   visibility: hidden;
 }
 
-.float-display.active{
+.float-display.active {
   visibility: visible;
+}
+
+.nav-home{
+  padding: 0.5rem 1rem;
+}
+
+.home-grid {
+  padding: 0 0.5rem;
+  padding-top: 90px;
+}
+
+.home-image {
+  width: 70%;
+  height: 100% !important;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media screen and (min-width: 768px) {
@@ -102,5 +124,14 @@ td {
 
   .colors {
     justify-content: initial;
+  }
+
+  .home-grid {
+    padding-top: 90px;
+  }
+
+  .home-image {
+    width: 23%;
+    height: 100% !important;
   }
 }
