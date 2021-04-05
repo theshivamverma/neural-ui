@@ -10,36 +10,55 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="doc-layout.css">
+    <link rel="stylesheet" href="doc-layout.css" />
     <script
       src="https://kit.fontawesome.com/17540dc721.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="nav top-fixed p-1-4 box-shadow-down nav-home">
+    <nav class="nav top-fixed box-shadow-down nav-home">
       <div class="nav-logo">
-          <div class="nav-logo__img">
-              <img src="./images/circle_img.png" class="responsive-image" alt="">
-          </div>
-          <h1 class="font-size-lg letter-spaced">Neural UI</h1>
+        <div class="nav-logo__img">
+          <img src="./images/main_img.jpg" class="responsive-image circle" alt="" />
+        </div>
+        <h1 class="font-size-lg letter-spaced">Neural UI</h1>
       </div>
-     <p class="font-size-m medium">v 1.0</p>
+      <!-- <p class="font-size-m medium center">v 1.0</p> -->
+      <a href="https://github.com/theshivamverma/neural-ui" class="">
+        <button class="btn btn-icon icon-text-down">
+        <i class="fab fa-github icon-lg"></i>
+        <p class="mt-05">Github
+      </button>
+      </a>
     </nav>
     <div class="grid-container p-0-4 stacked-list home-grid">
-        <div class="home-image-container center p-1">
-            <img src="./images/main_img.jpg" class="responsive-image circle home-image" alt="">
-        </div>
-         <div class="flex flex-column justify-center align-center center">
-            <h1 class="font-size-xl letter-spaced medium">Welcome to Neural UI</h1>
-            <p class="font-size-sm light letter-spaced mt-1">Build Awesome, Minimalistic and Beautiful UI using the Neural UI library.</p>
-            <a href="/documentation.html"><button class="btn btn-col btn-primary letter-spaced uppercase border-round mt-1 btn-lg">Get Started</button></a>
-        </div>
+      <div class="home-image-container center p-1">
+        <img
+          src="./images/main_img.jpg"
+          class="responsive-image circle home-image"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-column justify-center align-center center">
+        <h1 class="font-size-xl letter-spaced medium">Welcome to Neural UI</h1>
+        <p class="font-size-sm light letter-spaced mt-1">
+          Build Awesome, Minimalistic and Beautiful UI using the Neural UI
+          library.
+        </p>
+        <a href="/documentation.html"
+          ><button
+            class="btn btn-col btn-primary letter-spaced uppercase border-round mt-1 btn-lg"
+          >
+            Get Started
+          </button></a
+        >
+      </div>
     </div>
     <div class="center">
-        <p class="font-size-sm light footer">
-            Build with <i class="fas fa-heart colorAlertRed"></i> by Shivam Verma
-        </p>
+      <p class="font-size-sm light footer">
+        Build with <i class="fas fa-heart colorAlertRed"></i> by Shivam Verma
+      </p>
     </div>
   </body>
 </html>

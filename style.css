@@ -14,13 +14,13 @@ a {
 
 :root {
   /* Colors */
-  --primary-color: #fff;
+  --white: #fff;
   --secondary-color: #000;
   --gray: #ebebeb;
   --darkgray: #9ca3af;
   --flatgreen: #34d399;
   --flatblue: #60a5fa;
-  /* --flatblue: #1B9CFC; */
+  --darkblue: #002A46;
   --flatred: #f87171;
   --flatpurple: #a78bfa;
   --fadedred: #fed7d7;
@@ -73,6 +73,7 @@ html {
 /* components */
 .grid-container {
   display: grid;
+  min-height: 100px;
   grid-gap: 1rem;
 }
 
@@ -95,7 +96,7 @@ html {
 /* Background colors */
 
 .bgWhite {
-  background-color: var(--primary-color);
+  background-color: var(--white);
 }
 
 .bgGray {
@@ -155,7 +156,7 @@ html {
 }
 
 .colorWhite {
-  color: var(--primary-color);
+  color: var(--white);
 }
 
 .colorGray {
@@ -821,7 +822,7 @@ html {
 }
 
 .bdWhite {
-  border-color: var(--primary-color);
+  border-color: var(--white);
 }
 
 .bdBlack {
@@ -956,7 +957,7 @@ html {
   height: 20px;
   font-size: 0.8rem;
   font-weight: 400;
-  color: var(--primary-color);
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1010,11 +1011,11 @@ html {
 }
 
 .btn-primary {
-  background-color: var(--flatblue);
+  background-color: var(--darkblue);
 }
 
 .btn-secondary {
-  background-color: var(--darkgray);
+  background-color: var(--flatblue);
 }
 
 .btn-outline {
@@ -1022,7 +1023,7 @@ html {
 }
 
 .btn-col {
-  color: var(--primary-color);
+  color: var(--white);
 }
 
 .btn-lg {
@@ -1117,22 +1118,23 @@ html {
 .product-badge {
   width: 40px;
   height: 20px;
-  background-color: var(--alertred);
+  background-color: var(--flatblue);
   position: absolute;
   top: 10%;
   left: 0;
-  color: var(--primary-color);
+  color: var(--white);
   display: flex;
   align-items: center;
   padding-left: 0.5rem;
   font-size: 0.8rem;
+  z-index: var(--z-index8);
 }
 
 .top-triangle {
   width: 0;
   height: 0;
   border-top: 0px solid transparent;
-  border-left: 20px solid var(--alertred);
+  border-left: 20px solid var(--flatblue);
   border-bottom: 15px solid transparent;
   position: absolute;
   left: 90%;
@@ -1143,7 +1145,7 @@ html {
   width: 0;
   height: 0;
   border-top: 15px solid transparent;
-  border-left: 20px solid var(--alertred);
+  border-left: 20px solid var(--flatblue);
   border-bottom: 0px solid transparent;
   position: absolute;
   left: 90%;
@@ -1205,7 +1207,7 @@ html {
 }
 
 .wishlist {
-  color: var(--primary-color);
+  color: var(--white);
 }
 
 .like {
@@ -1260,7 +1262,7 @@ html {
 .quantity {
   font-size: 0.9rem;
   padding: 0.3rem 1.2rem;
-  background-color: var(--primary-color);
+  background-color: var(--white);
 }
 
 .cart-product-price {
@@ -1339,7 +1341,7 @@ html {
   height: 100%;
   position: absolute;
   top: 0;
-  color: var(--primary-color);
+  color: var(--white);
   background-color: rgba(0, 0, 0, 0.26);
   text-align: center;
 }
@@ -1356,7 +1358,7 @@ html {
   position: absolute;
   top: 5px;
   right: 10px;
-  color: var(--primary-color);
+  color: var(--white);
   z-index: var(--z-index8);
 }
 
@@ -1383,7 +1385,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: var(--white);
 }
 
 .box-shadow-down {
@@ -1544,7 +1546,7 @@ html {
 
 .input-textbox:focus + .input-label,
 .input-textbox:not(:placeholder-shown) + .input-label {
-  background-color: var(--primary-color);
+  background-color: var(--white);
   opacity: 1;
   transform: scale(0.8) translateY(-100%) translateX(-10px);
   color: var(--flatblue);
@@ -1569,7 +1571,7 @@ html {
 
 .error > .input-textbox:focus + .input-label,
 .input-textbox:not(:placeholder-shown) + .input-label {
-  background-color: var(--primary-color);
+  background-color: var(--white);
   opacity: 1;
   transform: scale(0.8) translateY(-100%) translateX(-8px);
   color: var(--alertred);
@@ -1605,7 +1607,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--primary-color);
+  background-color: var(--white);
 }
 
 .modal-buttons {

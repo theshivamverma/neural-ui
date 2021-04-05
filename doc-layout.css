@@ -87,7 +87,7 @@ td {
   visibility: visible;
 }
 
-.nav-home{
+.nav-home {
   padding: 0.5rem 1rem;
 }
 
@@ -124,6 +124,10 @@ td {
 
   .colors {
     justify-content: initial;
+  }
+
+  .nav-home {
+    padding: 0 4rem;
   }
 
   .home-grid {
