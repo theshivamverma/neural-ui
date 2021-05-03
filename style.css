@@ -782,7 +782,7 @@ html {
   background-color: var(--white);
   opacity: 1;
   transform: scale(0.8) translateY(-100%) translateX(-10px);
-  color: var(--flatblue);
+  color: var(--flatblue) !important;
   font-weight: 400;
 }
 
